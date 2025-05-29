@@ -125,7 +125,7 @@ if (orderForms.length > 0) {
 
             // Create WhatsApp message
             const message = `New Order\nBill ID: ${billID}\nProduct: ${product}\nQuantity: ${quantity}kg\nTotal: $${total}\nDelivery Address: ${address}\nPlease confirm order and provide payment details.`;
-            const phoneNumber = 'YOUR_PHONE_NUMBER'; // Replace with your WhatsApp number, e.g., '+1234567890'
+            const phoneNumber = '+917454841719'; // Replace with your WhatsApp number, e.g., '+1234567890'
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
             console.log('WhatsApp message:', message);
