@@ -1,4 +1,4 @@
-// Hamburger menu toggle
+no// Hamburger menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -130,8 +130,7 @@ if (orderForms.length > 0) {
 
             console.log('WhatsApp message:', message);
             window.open(whatsappUrl, '_blank');
-            form.reset();
-            console.log('Form reset and WhatsApp URL opened');
+            console.log('WhatsApp URL opened');
         });
     });
 } else {
