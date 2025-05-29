@@ -19,14 +19,44 @@
         <div class="hamburger">☰</div>
     </nav>
 
-    <section class="section">
-        <h2>Organic Vegetables</h2>
-        <img src="https://images.unsplash.com/photo-1500595046743-ddf4d3d753fd" alt="Organic Vegetables" style="max-width: 100%; border-radius: 10px; margin: 20px 0;">
-        <p>Our organic vegetables are grown without pesticides, ensuring the freshest and healthiest produce for your family. From crisp lettuce to juicy tomatoes, explore our seasonal offerings.</p>
-        <p><strong>Available Products:</strong> Tomatoes, Lettuce, Carrots, Cucumbers, and more.</p>
-        <p><strong>Order Now:</strong> Contact us to place your order or visit our farm stand.</p>
-    </section>
-
+<section class="section">
+    <h2>Organic Vegetables</h2>
+    <img src="https://images.unsplash.com/photo-1500595046743-ddf4d3d753fd" alt="Organic Vegetables" style="max-width: 100%; border-radius: 10px; margin: 20px 0;">
+    <p>Our organic vegetables are grown without pesticides, ensuring the freshest and healthiest produce for your family. Order via WhatsApp, and we’ll confirm payment and delivery details.</p>
+    <div class="product-list">
+        <div class="product-item">
+            <h3>Tomatoes</h3>
+            <p>$3/kg</p>
+            <form class="order-form" data-product="Tomatoes" data-price="3">
+                <input type="number" name="quantity" placeholder="Quantity (kg)" min="1" required>
+                <input type="text" name="address" placeholder="Delivery Address (within 5km of 123 Farm Road)" required>
+                <button type="submit" class="buy-button">Order via WhatsApp</button>
+            </form>
+        </div>
+        <div class="product-item">
+            <h3>Lettuce</h3>
+            <p>$2/kg</p>
+            <form class="order-form" data-product="Lettuce" data-price="2">
+                <input type="number" name="quantity" placeholder="Quantity (kg)" min="1" required>
+                <input type="text" name="address" placeholder="Delivery Address (within 5km of 123 Farm Road)" required>
+                <button type="submit" class="buy-button">Order via WhatsApp</button>
+            </form>
+        </div>
+        <div class="product-item">
+            <h3>Carrots</h3>
+            <p>$2.5/kg</p>
+            <form class="order-form" data-product="Carrots" data-price="2.5">
+                <input type="number" name="quantity" placeholder="Quantity (kg)" min="1" required>
+                <input type="text" name="address" placeholder="Delivery Address (within 5km of 123 Farm Road)" required>
+                <button type="submit" class="buy-button">Order via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+    <p><strong>How to Order:</strong> Select a product, enter the quantity and delivery address (within 5km of 123 Farm Road, [Your City]). Click "Order via WhatsApp" to receive a unique bill ID. We’ll confirm your order and provide payment details via WhatsApp. Use your bill ID to verify your order.</p>
+    <div id="bill-id-display" style="display: none; text-align: center; margin-top: 20px;">
+        <p>Your Bill ID: <span id="bill-id"></span></p>
+    </div>
+</section>
     <footer>
         <p>© 2025 Dhir's Promise. All rights reserved.</p>
     </footer>
